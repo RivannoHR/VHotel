@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../CSS/Global.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/RoomDetails.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <nav class="navbar">
+        <a href="Homepage.html#top" class = "navbar-logo">V<span>Hotel</span></a>
+        <div class="navbar-items">
+            <a href="Facilites.html" >Facilities</a>
+            <a href="Events.html" >Events</a>
+            <a href="AboutUs.html" >About Us</a>
+        </div>
+        <div class="navbar-extra">
+            <a href="#" id="Sign in">Book Now</a>
+            <div class="material-symbols-outlined" id="phone-menu">
+                menu
+            </div>
+        </div>
+    </nav>
+
+    <div class="title">
+      Pricing and Amenities
+    </div>
+    <div class="compare">
+        
+        <div class="container">
+          <img src="../resources/1-bed_bedroom.jpg" alt="" id="img1">
+          <div class="box">
+            <input type="radio" name="opt" value="1-bed_bedroom" id="opt1" checked>
+            <input type="radio" name="opt" value="2-beds_bedroom" id="opt2">
+            <input type="radio" name="opt" value="MasterBedroom-1" id="opt3">
+          </div>
+          <h2 id="roomDescription">
+            1 bed <br>
+            Shower bathroom<br>
+            TV<br>
+            Workdesk<br><br>
+            <span>RP.487.000,00</span>
+          </h2>
+          <h2 id="roomTitle">
+            <span>Single Room</span>
+          </h2>
+        </div>
+        <div class="container">
+          <img src="../resources/1-bed_bedroom.jpg" alt="" id="img2">
+          <div class="box">
+            <input type="radio" name="opt2" value="1-bed_bedroom" id="opt1-2" checked>
+            <input type="radio" name="opt2" value="2-beds_bedroom" id="opt2">
+            <input type="radio" name="opt2" value="MasterBedroom-1" id="opt3">
+          </div>
+            <h2 id="roomDescription2">
+              1 bed <br>
+              Shower bathroom<br>
+              TV<br>
+              Workdesk<br><br>
+              <span>RP.487.000,00</span>
+            </h2>
+            <h2 id="roomTitle2">
+              <span>Single Room</span>
+            </h2>
+          </div>
+    </div>
+    <div class="title">
+      Room Details
+    </div>
+    <div class="content" id="single-room">
+      <H2>Our Single Room offers a comfortable retreat with a cozy bed, a convenient shower bathroom, and modern amenities. Relax and unwind as you enjoy your favorite shows on the TV or catch up on work at the dedicated workdesk. Experience a restful stay in this well-appointed room for RP.487.000,00.</H2>
+      <img src="../resources/1-bed_bedroom.jpg">
+    </div>
+    <div class="line-breaker"></div>
+    <div class="content" id="double-room">
+      <H2>Indulge in spacious comfort with our Double Room featuring two comfortable beds, a luxurious bathtub bathroom, and a range of amenities. Enjoy entertainment on the large TV, catch up on work at the well-equipped workdesk, or simply relax on the couch and sofa. Experience a delightful stay in this room for RP.637.000,00.</H2>
+      <img src="../resources/2-beds_bedroom.jpg">
+    </div>
+    <div class="line-breaker"></div>
+    <div class="content" id="luxurious-suite">
+    <H2>Experience the epitome of luxury in our Luxurious Suite, featuring a master bedroom and two single bed bedrooms. Each bedroom is equipped with its own luxurious bathtub bathroom, ensuring privacy and convenience for all guests. Enjoy entertainment on the smart TV, work comfortably at the spacious workdesk, and relax in the inviting couch and sofa area. The suite also includes a fully equipped kitchen and minibar for added convenience. Experience unparalleled luxury and comfort in this suite for RP.1.497.000,00.</H2>
+    <img src="../resources/MasterBedroom-1.jpg">
+    </div>
+
+
+    <div class="flexboxMain">
+      <div class="flexBoxIn" id="kitchen" >
+          <div class="item-container" >
+                  <img src="../resources/Kitchen-Minibar-Sharpened.jpg" >
+          </div>
+          <h2 class="item-text">Kitchen with minibar</h2>
+      </div>
+      <div class="flexBoxIn" id="extra-room">
+              <div class="item-container" >
+                  <img src="../resources/Extra-bedroom.jpg" >
+              </div>
+              <h2 class="item-text">Single bed bedroom</h2>
+      </div>
+  </div>
+    <div class="bottom">
+        <h2 id="copyright">© 2023 Vhotel All rights reserved</h2>
+    </div>
+<!--scripts-->
+<script src="../Javascript/RoomDetails.js"></script>
+
+</body>
+</html>

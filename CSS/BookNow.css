@@ -1,0 +1,85 @@
+.navbar .navbar-items{
+    padding-right: 10%;
+}
+.head{
+    background-image: url(../resources/head.jpg);
+}
+.head .container-form{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top:10vh;
+    min-height: 80vh;
+    border: 3px solid var(--color-30);
+    background-color: var(--color-60);
+    color: var(--color-30);
+    width: 430px;
+ 
+
+}
+.head .container-form header{
+    position: relative;
+    top: 5%;
+    font-weight: 700;
+    font-size: 1.9em;
+    margin-bottom: 5%;
+}
+.head .container-form form{
+  width: 100%;
+}
+.head .container-form .form-field{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding: 1% 3%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.head .container-form .form-field h3{
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width:100%;
+    font-weight: 400;
+}
+.head .container-form .form-field input{
+    width:100%;
+    border: 2px solid var(--color-30);
+    padding: 1%;
+}
+.form-field-radio{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-field-radio .radio-inputs{
+    margin-top: 2%;
+}
+#price{
+    margin-top: 2%;
+    width: 50%;
+    height: 30px;
+    padding: 2% 2%;
+    text-align: center;
+    font-weight: 500;
+
+}
+.form-field .errorMsg{
+    display: none;
+    position:absolute;
+    top:33px;
+    left:auto;
+    right:3%;
+    width: 40.3%;
+    height: 27px;
+    font-size: 0.7em;
+    color: var(--color-10);
+}
+.form-field .errorMsg.active{
+    display: block;
+   
+}

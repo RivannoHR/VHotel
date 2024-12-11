@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&family=Noto+Sans+Symbols+2&display=swap');
+:root{
+    --color-60: #fff;
+    --color-30: #7b7570;
+    --color-10: #fe0000;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    /* overflow-x: hidden; */
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--color-60);
+    color: #000000;
+}
+/*navbar start*/
+.navbar{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 3%;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+    transition: 0.2s ease-in;
+}
+
+.navbar .navbar-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar .navbar-logo{
+    padding: 0 0.1%;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-10);
+}
+.navbar .navbar-logo ::after{
+    content : '';
+    display : block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--color-10);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+.navbar .navbar-logo :hover::after{
+    transform: scaleX(0.7);
+}
+.navbar .navbar-logo span{
+    color: var(--color-60);
+}
+.navbar .navbar-items a{
+    color: var(--color-60);
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin: 0 1.3rem;
+    border-radius: 30px;
+    padding: 2% 2%;
+    white-space: nowrap;
+}
+.navbar-extra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-extra a{
+    color: var(--color-60);
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin: 0 1.3rem;
+    border-radius: 30px;
+    padding: 4% 2% 1% 2%;
+    white-space: nowrap;
+}
+.navbar-extra a:hover{
+    color:var(--color-10);
+}
+.navbar-extra a::after{
+    content : '';
+    display : block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--color-10);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+.navbar-extra a:hover::after{
+    transform: scaleX(0.7);
+}
+.navbar.scrolled{
+    background-color: var(--color-30);
+}
+.navbar .navbar-items.phone {
+    display: flex;
+    padding: 2% 1%;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    gap: 7px;
+    top: 100%;
+    right: 0;
+    border: 2px solid var(--color-30);
+}
+.navbar .navbar-items.headLess {
+    display: flex;
+    padding: 2% 1%;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    gap: 7px;
+    top: 100%;
+    right: 0;
+    border: 2px solid var(--color-30);
+    background-color: rgba(123, 117, 112, 80%);
+}
+.navbar .navbar-items.phone.filled {
+    background-color: rgba(123, 117, 112, 80%);
+}
+#phone-menu {
+    color: var(--color-60);
+    display: none;
+} 
+/*navbar end*/
+
+/*head*/
+.head{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--color-60);
+    box-shadow: inset 0px 20px 1000px 10px black,
+                inset 0px -20px 1000px 10px black;
+}
+
+/*head end*/
+
+/*bottom*/
+.bottom{
+    min-width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-60);
+    padding: 1% 3%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-30);
+}
+.bottom #copyright{
+    font-size: 0.9em;
+    font-weight: 400;
+}
+/*bottom end*/
+/* Misc*/
+
+
+
+/*Media queries*/
+
+/*Laptop*/
+@media (max-width: 1366px){
+    html{
+        font-size: 75%;
+    }
+    
+}
+    
+/*Tablet*/
+@media (max-width: 768px){
+    html{
+        font-size: 62.5%;
+    }
+    #phone-menu{
+        display: inline-block;
+    }
+    .navbar .navbar-items{
+        position: absolute;
+        right: -200%;
+    }
+
+}
+
+/*handphone*/
+@media (max-width: 450px){
+    html{
+        font-size: 40%;
+    }
+}

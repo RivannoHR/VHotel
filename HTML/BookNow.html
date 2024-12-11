@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../CSS/Global.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/BookNow.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="head">
+        <div class="container-form">
+            <header>CoolText</header>
+            <form action="" id="Booking">
+                <div class="form-field">
+                    <h3>Full Name</h3>
+                    <input type="text" id="fullname" placeholder="Enter your name">
+                    <div class="errorMsg" id="errorFullName">Please fill out your name</div>
+                </div>
+                <div class="form-field">
+                    <h3>Email</h3>
+                    <input type="text" id="email" placeholder="example123@gmail.com">
+                    <div class="errorMsg" id="errorEmail">Please input valid email address</div>
+                </div>
+                <div class="form-field">
+                    <h3>Phone Number</h3>
+                    <input type="tel" id="phoneNumber" placeholder="Enter your name">
+                    <div class="errorMsg" id="errorPhoneNumber">Please input valid phone number</div>
+                </div>
+                <div class="form-field">
+                    <h3>Booking Date</h3>
+                    <input type="date" id="bookDate" placeholder="Enter your name">
+                    <div class="errorMsg" id ="errorBookDate">Please select a future date and time.</div>
+                </div>
+                <div class="form-field-radio">
+                    <h3>Room Choice</h3>
+                    <div class="radio-inputs">
+                        <input type="radio" name="roomChoice" id="singleRoom" value="RP.487.000,00">
+                        <label for="singleRoom">Single Room</label>
+                        <Input type="radio" name="roomChoice" id="doubleRoom" value="RP.637.000,00">
+                        <label for="doubleRoom">Double Room</label></Input>
+                        <Input type="radio" name="roomChoice" id="luxuriousSuite" value="RP.1.497.000,00">
+                        <label for="luxuriousSuite">Luxurious Suite</label></Input>
+                    </div>
+                    <div id="price"></div>
+                </div>
+                <div class="form-field">
+                    <input type="button" value="Submit" onclick="validate()">
+                </div>
+
+            </form>
+        </div>
+        
+
+    </div>
+    <nav class="navbar">
+        <a href="Homepage.html#top" class = "navbar-logo">V<span>Hotel</span></a>
+        <div class="navbar-items">
+            <a href="RoomDetails.html">Room Details</a>
+            <a href="Events.html" >Events</a>
+            <a href="AboutUs.html" >About Us</a>
+        </div>
+    
+        <div class="navbar-extra">
+            
+            <div class="material-symbols-outlined" id="phone-menu">
+                menu
+            </div>
+        </div>
+    </nav>
+    
+    <div class="bottom">
+        lor
+        <h2 id="copyright">© 2023 Vhotel All rights reserved</h2>
+    </div>
+<!--scripts-->
+<script src="../Javascript/BookNow.js"></script>
+</body>
+</html>
